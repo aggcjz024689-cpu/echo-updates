@@ -24,7 +24,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 from ddgs import DDGS
 
 # ========== ВЕРСИЯ И ОБНОВЛЕНИЯ ==========
-CURRENT_VERSION = "1.0.1"
+CURRENT_VERSION = "1.0.3"
 UPDATE_URL = "https://raw.githubusercontent.com/aggcjz024689-cpu/echo-updates/main/version.txt"
 DOWNLOAD_URL = "https://raw.githubusercontent.com/aggcjz024689-cpu/echo-updates/main/assistant.py"
 
