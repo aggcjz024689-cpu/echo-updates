@@ -25,8 +25,8 @@ from ddgs import DDGS
 
 # ========== ВЕРСИЯ И ОБНОВЛЕНИЯ ==========
 CURRENT_VERSION = "1.0.1"
-UPDATE_URL = "https://raw.githubusercontent.com/sergio000x/echo-updates/main/version.txt"
-DOWNLOAD_URL = "https://raw.githubusercontent.com/sergio000x/echo-updates/main/assistant.py"
+UPDATE_URL = "https://raw.githubusercontent.com/aggcjz024689-cpu/echo-updates/main/version.txt"
+DOWNLOAD_URL = "https://raw.githubusercontent.com/aggcjz024689-cpu/echo-updates/main/assistant.py"
 
 def check_for_updates():
     """Проверяет наличие новой версии"""
@@ -355,10 +355,11 @@ def execute_system_command(cmd):
     cmd = cmd.lower()
     
     # Время и дата
-    if any(word in cmd for word in ["сколько времени", "который час", "текущее время"]):
+    if any(word in cmd for word in ["сколько времени", "который час", "текущее время", "время", "часы", "скажи время", "который сейчас час"]):
         speak(get_current_time())
         return True
-    if any(word in cmd for word in ["какая сегодня дата", "сегодняшняя дата", "какое сегодня число"]):
+    
+    if any(word in cmd for word in ["какая сегодня дата", "сегодняшняя дата", "какое сегодня число", "дата", "какое число", "сегодняшнее число"]):
         speak(get_current_date())
         return True
     
